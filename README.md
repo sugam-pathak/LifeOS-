@@ -1,10 +1,12 @@
 # LifeOS-
-A terminal-based productivity and life management system for students.
+
+*A terminal-based productivity and life management system for students.*
 LifeOS CLT is a lightweight command-line application that helps students manage their daily lives from the terminal. It brings together task scheduling, habit tracking, study timers, XP-based motivation, and analytics into a single offline-first system.
 The goal of LifeOS CLT is simple: it turns your terminal into a personal productivity dashboard.
 ***
 
-**Why LifeOS CLT?**
+## Why LifeOS CLT?
+
  Most productivity tools are heavy, distracting, or rely on the cloud.
 
  1.Minimalism and speed
@@ -19,129 +21,150 @@ It is especially helpful for students who already spend time in the terminal and
 
 ***
 
-**Key Features**  
-**Core System**  
+## Key Features:-
 
-Animated boot and shutdown sequence.  
+**Core System** : 
 
-Optional fast-boot mode.  
+    Animated boot and shutdown sequence.  
 
-Colorized output with on/off toggle.  
+    fast-boot mode.  
 
-Automatic data saving and backups.  
+    Colorized output with on/off toggle.  
 
-Configurable keybindings.  
+    Automatic data saving and backups.  
 
-**Tasks & Scheduling**  
+    Configurable keybindings.  
 
-Add tasks with due dates and times.  
+**Tasks & Scheduling** :  
 
-Mark tasks as completed using task IDs.  
+    Add tasks with due dates and times.  
 
-Automatic overdue detection.  
+    Mark tasks as completed using task IDs.  
 
-Daily task summary at startup.  
+    Automatic overdue detection.  
 
-Reminder checks during runtime.  
+    Daily task summary at startup.  
 
-**Habits & Consistency**  
+    Reminder checks during runtime.  
+    
+**Habits & Consistency** :
 
-Create and track habits.  
+    Create and track habits.  
 
-Increment habit completions.  
+    Increment habit completions.  
 
-Habit-based XP rewards.  
+    Habit-based XP rewards.  
 
-Daily streak tracking.  
+    Daily streak tracking.  
 
-**Study Tools**  
+**Study Tools** : 
 
-Study timer (Pomodoro-style).  
+    Study timer (Pomodoro-style).  
 
-Subject-wise session tracking.  
+    Subject-wise session tracking.  
 
-Study history and analytics.  
+    Study history and analytics.  
 
-**Progress & Motivation**  
+**Progress & Motivation** :
 
-XP and level system.  
+    XP and level system.  
 
-Progress bars.  
+    Progress bars.  
 
-Achievement unlocking.  
+    Achievement unlocking.  
 
-Streak bonuses.  
+    Streak bonuses.  
 
-**Utilities ** 
+**Utilities** : 
 
-Built-in calculator (safe evaluation).  
+    Built-in calculator (safe evaluation).  
 
-Export data to JSON or CSV.  
+    Export data to JSON or CSV.  
 
-Local configuration file.  
+    Local configuration file.  
 
-Fully offline operation. 
+    Fully offline operation. 
+
 ***
 
-**Installation
-Requirements**
+## Installation ⬇
 
+**Requirements**
+```Requirements
 Python 3.9 or newer
-
 Windows, Linux, or macOS
-
 Terminal with ANSI color support (recommended)
-
+```
 **Run Locally**
+
+```bash
 git clone https://github.com/yourusername/lifeos-clt.git
-cd lifeos-clt
+cd lifeos-
 python terminal1.py
+```
 
-**Command Reference  
-General Commands ** 
-Command   Description  
-help      Show help menu  
-status    View level, XP, and streak  
-save      Save current data  
-exit      Exit LifeOS CLT  
+## Command  💻 
 
-**Task Management ** 
-Command   Description  
-`task add Title YYYY-MM-DD HH:MM`  Add a new task  
-task done <task_id>  Mark task as completed  
-tasks     List all tasks  
-tasks today  List today's tasks  
+**General Commands**
 
-**Habit Tracking ** 
-Command   Description  
-habit add <name>  Add a new habit  
-habit done <name>  Mark habit as completed  
-habits    List all habits  
+| Command |  Description |
+|---------|--------------|
+| `help`  | Show help menu | 
+|`status` | View level, XP, and streak |  
+| `save`   | Save current data | 
+|`exit`  | Exit LifeOS CLT | 
 
-**Study  **
-Command   Description  
-study start <subject>  Start study timer  
-study stop  Stop current study session  
-study stats  View study statistics  
 
-**Utilities ** 
-Command   Description  
-calc <expression>  Calculator  
-export json  Export data to JSON  
-export csv  Export data to CSV  
+**Task Management** 
 
-**Appearance & Settings ** 
-Command   Description  
-color on   Enable colored output  
-color off  Disable colored output  
+
+|Command |  Description |
+|------------|----------------|
+|`task add Title YYYY-MM-DD HH:MM` | Add a new task |  
+| `task done <task_id>` |  Mark task as completed | 
+|`tasks`  |   List all tasks|  
+|`tasks today` | List today's tasks |  
+
+**Habit Tracking** 
+
+|Command  |  Description | 
+|-------------|--------------|
+|`habit add <name>` | Add a new habit |  
+|`habit done <name>` |  Mark habit as completed |
+|`habits`  |  List all habits |
+
+**Study**
+
+| Command  | Description |
+|-------------|-------------|
+|`study start <subject>` | Start study timer | 
+|`study stop` | Stop current study session  |
+|`study stats` | View study statistics  |
+
+**Utilities** 
+
+| Command  | Description  |
+|------------|--------------|
+|`calc <expression>` | Calculator (e.g: 2*4) |  
+|`export json` | Export data to JSON | 
+|`export csv` | Export data to CSV | 
+
+**Appearance & Settings**
+
+|Command  | Description | 
+|-----------|-------------------------|
+|`color on`|    Enable colored output  |
+|`color off` | Disable colored output  |
+
 ***
 
-**Configuration**
+##Configuration
 
-User configuration file location:
-~/.lifeos/config.json
+**User configuration file location**:
+`~/.lifeos/config.json`
 
 Example configuration:
+```
 {
   "theme": "green",
   "keybindings": {
@@ -149,7 +172,7 @@ Example configuration:
     "st": "status"
   }
 }
-
+```
 **Data Storage**
 
 All data is stored locally on your system:
@@ -164,16 +187,16 @@ Automatic backups are stored in:
 
 When new features are added, older data files are automatically migrated to prevent data loss.
 
-Project Structure
+**Project Structure**:
+```
 terminal1.py        Main application
 ~/.lifeos/
  ├─ data.json       User data
  ├─ config.json     User configuration
  └─ backups/        Automatic backups
+```
 
-***
-
-**Design Philosophy**
+##Design Philosophy
 
 LifeOS CLT is built around these principles:
 
@@ -189,9 +212,7 @@ Student-focused productivity
 
 Your data stays on your machine, under your control.
 
-***
-
-**License**
+##License
 
 MIT License — free to use, modify, and distribute.
 
