@@ -21,7 +21,7 @@ It is especially helpful for students who already spend time in the terminal and
 
 ***
 
-## Key Features:-
+## 🗝 Key Features:-
 
 **Core System** : 
 
@@ -57,7 +57,7 @@ It is especially helpful for students who already spend time in the terminal and
 
     Daily streak tracking.  
 
-**Study Tools** : 
+**👩‍🎓Study Tools** : 
 
     Study timer (Pomodoro-style).  
 
@@ -98,8 +98,8 @@ Terminal with ANSI color support (recommended)
 **Run Locally**
 
 ```bash
-git clone https://github.com/yourusername/lifeos-clt.git
-cd lifeos-
+git clone https://github.com/sugam-pathak/LifeOS-.git
+cd lifeOS-
 python terminal1.py
 ```
 
@@ -156,9 +156,8 @@ python terminal1.py
 |`color on`|    Enable colored output  |
 |`color off` | Disable colored output  |
 
-***
 
-##Configuration
+## Configuration
 
 **User configuration file location**:
 `~/.lifeos/config.json`
@@ -196,7 +195,7 @@ terminal1.py        Main application
  └─ backups/        Automatic backups
 ```
 
-##Design Philosophy
+## Design Philosophy
 
 LifeOS CLT is built around these principles:
 
@@ -212,7 +211,7 @@ Student-focused productivity
 
 Your data stays on your machine, under your control.
 
-##License
+## License
 
 MIT License — free to use, modify, and distribute.
 
